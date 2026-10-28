@@ -25,28 +25,7 @@ Terraform modules are used to separate infrastructure components, improve mainta
 
 ## Architecture
 
-```mermaid
-flowchart TB
-    User["Users"]
-    WAF["AWS WAF"]
-    CF["Amazon CloudFront"]
-
-    subgraph VPC["Amazon VPC - us-east-1"]
-        subgraph Public["Public Subnets - Multiple AZs"]
-            ALB["Application Load Balancer"]
-            NAT["Optional NAT Gateway"]
-        end
-
-        subgraph App["Private Application Subnets - Multiple AZs"]
-            ASG["EC2 Auto Scaling Group"]
-            EC2A["EC2 Application Instance"]
-            EC2B["EC2 Application Instance"]
-        end
-
-        subgraph DB["Private Database Subnets - Multiple AZs"]
-            RDS["Amazon RDS for MySQL"]
-        end
-    end
+![Architecture Diagram](./AWS-3-Tier-Architecture.png)
 
     S3["Private Amazon S3 Bucket"]
     CW["Amazon CloudWatch"]
