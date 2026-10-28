@@ -27,24 +27,6 @@ Terraform modules are used to separate infrastructure components, improve mainta
 
 ![Architecture Diagram](./AWS-3-Tier-Architecture.png)
 
-    S3["Private Amazon S3 Bucket"]
-    CW["Amazon CloudWatch"]
-    SNS["Amazon SNS"]
-
-    User --> CF
-    CF --> WAF
-    WAF --> ALB
-    ALB --> ASG
-    ASG --> EC2A
-    ASG --> EC2B
-    EC2A --> RDS
-    EC2B --> RDS
-    CF --> S3
-    CW --> SNS
-    ALB -. "Metrics" .-> CW
-    ASG -. "Metrics" .-> CW
-    RDS -. "Metrics" .-> CW
-```
 
 **Architecture note:** The diagram represents the intended logical design. The S3 bucket is configured as a private CloudFront origin for `/assets/*` requests. The sample Nginx application does not necessarily serve those assets. The NAT Gateway is optional, and the actual deployed configuration depends on the Terraform variables used.
 
