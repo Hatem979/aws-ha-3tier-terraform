@@ -1,0 +1,1 @@
+# Edge module\n\nOptional module for Route 53, CloudFront, WAF, and certificate-related resources. Deploy only after validating account access and costs.\n
