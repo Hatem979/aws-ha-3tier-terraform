@@ -371,8 +371,6 @@ The current development configuration is designed to make cleanup easier, includ
 
 Potential extensions include:
 
-- Enable HTTPS between CloudFront and the ALB using a custom origin domain and ACM certificate.
-- Strengthen and test CloudFront origin protection.
 - Implement a sample application that retrieves the database secret through its EC2 instance role and connects to RDS.
 - Add an end-to-end application health check and automated deployment pipeline.
 - Add centralized logs and CloudTrail-based auditing.
