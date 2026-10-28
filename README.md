@@ -399,7 +399,9 @@ Potential extensions include:
 - Cloud Cost Awareness
 
 ## Author
-
-**Cloud Engineering Portfolio Project**
+**Hatem Nasser**
+*Junior Cloud / Infrastructure Engineer*
+* [GitHub](https://github.com/Hatem979)
+* [LinkedIn](www.linkedin.com/in/hatem-nasser-2a15921b4)
 
 This project was built to develop practical skills in AWS infrastructure design, Terraform, network security, monitoring, and cloud operations.
