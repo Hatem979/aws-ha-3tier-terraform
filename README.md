@@ -28,8 +28,6 @@ Terraform modules are used to separate infrastructure components, improve mainta
 ![Architecture Diagram](./AWS-3-Tier-Architecture.png)
 
 
-**Architecture note:** The diagram represents the intended logical design. The S3 bucket is configured as a private CloudFront origin for `/assets/*` requests. The sample Nginx application does not necessarily serve those assets. The NAT Gateway is optional, and the actual deployed configuration depends on the Terraform variables used.
-
 ## AWS Services Used
 
 | Service | Purpose |
@@ -46,6 +44,7 @@ Terraform modules are used to separate infrastructure components, improve mainta
 | AWS Secrets Manager | Stores the RDS-managed master credentials. |
 | AWS IAM | Provides an instance role and instance profile for EC2. |
 | Amazon S3 | Stores objects in a private bucket with versioning and encryption. |
+| VPC Gateway Endpoint (S3) | Enables private, secure communication to Amazon S3 without traversing the internet. |
 | Amazon CloudFront | Provides an edge distribution for application and static-content requests. |
 | AWS WAF | Applies managed rule groups and rate-based request filtering at the CloudFront distribution. |
 | Amazon CloudWatch | Provides monitoring, alarms, metrics, and a dashboard. |
