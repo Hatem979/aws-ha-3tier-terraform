@@ -402,6 +402,6 @@ Potential extensions include:
 **Hatem Nasser**
 *Junior Cloud / Infrastructure Engineer*
 * [GitHub](https://github.com/Hatem979)
-* [LinkedIn](www.linkedin.com/in/hatem-nasser-2a15921b4)
+* [LinkedIn](https://linkedin.com/in/hatem-nasser-2a15921b4)
 
 This project was built to develop practical skills in AWS infrastructure design, Terraform, network security, monitoring, and cloud operations.
